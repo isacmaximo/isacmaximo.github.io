@@ -1,0 +1,7 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "maximo.isac.deep_link_test",
+               "sha256_cert_fingerprints": ["B5:AB:71:93:22:87:3F:D6:43:D4:0B:DD:97:8D:C3:88:65:86:6A:BF:3C:59:2C:06:24:C3:DB:C0:4A:47:28:08"] }
+}]
+
+    
