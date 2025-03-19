@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#sobre-mim, #solucoes {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mim h2, #solucoes h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 20px; /* Espaçamento entre a foto e as informações */
+}
+
+.foto-perfil {
+    flex-shrink: 0; /* Impede que a foto encolha demais */
+}
+
+.foto-perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0; /* Remove a margem inferior padrão */
+}
+
+.info-perfil {
+    flex-grow: 1; /* Permite que as informações ocupem o espaço restante */
+}
+
+.solucao {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.solucao h3 {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.conteudo-solucao {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.conteudo-solucao h1, .conteudo-solucao p, .conteudo-solucao ul {
+    color: #333;
+}
+
+.conteudo-solucao ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.conteudo-privacidade {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    color: #333;
+}
+
+.conteudo-privacidade h1, .conteudo-privacidade h2, .conteudo-privacidade p {
+    color: #333;
+}
