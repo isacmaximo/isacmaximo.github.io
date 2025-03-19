@@ -39,12 +39,12 @@ main {
 
 .perfil-container {
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
-    gap: 20px; /* Espaçamento entre a foto e as informações */
+    align-items: center;
+    gap: 20px;
 }
 
 .foto-perfil {
-    flex-shrink: 0; /* Impede que a foto encolha demais */
+    flex-shrink: 0;
 }
 
 .foto-perfil img {
@@ -52,11 +52,11 @@ main {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0; /* Remove a margem inferior padrão */
+    margin-bottom: 0;
 }
 
 .info-perfil {
-    flex-grow: 1; /* Permite que as informações ocupem o espaço restante */
+    flex-grow: 1;
 }
 
 .solucao {
@@ -124,4 +124,50 @@ footer {
 
 .conteudo-privacidade h1, .conteudo-privacidade h2, .conteudo-privacidade p {
     color: #333;
+}
+
+/* Estilos para telas menores (mobile) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #sobre-mim, #solucoes {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .perfil-container {
+        flex-direction: column; /* Empilha a foto e as informações em telas menores */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .foto-perfil {
+        margin-bottom: 15px; /* Adiciona espaço abaixo da foto */
+    }
+
+    .info-perfil {
+        text-align: center; /* Garante que o texto fique centralizado */
+    }
+
+    .botao {
+        width: 100%; /* Faz os botões ocuparem a largura total */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    footer {
+        position: static; /* Remove o posicionamento fixo do footer em telas menores */
+        padding: 15px;
+    }
 }
