@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isac Maximo - Desenvolvedor Mobile</title>
-    <link rel="stylesheet" href="style.css">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="isac_maximo_tech">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>isac_maximo_tech</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header>
-        <h1>Isac Maximo</h1>
-        <p>Desenvolvedor Mobile</p>
-    </header>
-
-    <main>
-        <section id="sobre-mim">
-            <h2>Sobre Mim</h2>
-            <div class="perfil-container">
-                <div class="foto-perfil">
-                    <img src="eu.jpeg" alt="Isac Maximo">
-                </div>
-                <div class="info-perfil">
-                    <p>Estudante de Engenharia de Software pela Universidade Federal do Ceará.</p>
-                    <p>Desenvolvedor</p>
-                    <p><strong>Nome:</strong> Isac Maximo</p>
-                    <p><strong>Email:</strong> <a href="mailto:isacmaximomoura@gmail.com">isacmaximomoura@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="solucoes">
-            <h2>Soluções Desenvolvidas</h2>
-            <div class="solucao">
-                <h3>Edu Chat</h3>
-                <p>Aplicativo educacional que ajuda pessoas a encontrar fontes de pesquisa ou auxilia os usuários a pesquisar. Possui entrada de texto e Imagem (OCR) para pesquisar sobre um tema, e o retorno da pesquisa é um pequeno resumo sobre o tema, indicação de livros, indicações de temas para pesquisar em artigos e indicação de sites.</p>
-                <a href="educhat.html" class="botao" style="background-color: rgba(83, 114, 254, 1);">Saiba Mais sobre Edu Chat</a>
-            </div>
-
-            <div class="solucao">
-                <h3>Simple PDF</h3>
-                <p>Leitor de PDF simples, com possibilidade de tema escuro, mudar idioma do app, mudar número da página e compartilhar PDF. Ele também consegue ser identificado como leitor de PDF caso o usuário esteja no gerenciador de arquivos.</p>
-                <a href="simplepdf.html" class="botao" style="background-color: #A3C653;">Saiba Mais sobre Simple PDF</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p></p>
-    </footer>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
