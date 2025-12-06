@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Simple PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0d1f0d 0%, #1a2e1a 50%, #0f2410 100%);
+            min-height: 100vh;
+            color: #e8e8e8;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #A3C653 0%, #8CB844 50%, #6B9B2A 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(163, 198, 83, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+            animation: shimmer 8s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+
+            0%,
+            100% {
+                transform: translateX(-30%) translateY(-30%);
+            }
+
+            50% {
+                transform: translateX(30%) translateY(30%);
+            }
+        }
+
+        header h1 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 700;
+            color: #1a1a2e;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .conteudo-privacidade {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .conteudo-privacidade>p:first-child {
+            font-size: 1.1rem;
+            color: #b8b8b8;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #A3C653;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 1.3rem;
+            background: linear-gradient(180deg, #A3C653, #6B9B2A);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #d0d0d0;
+        }
+
+        strong {
+            color: #A3C653;
+            font-weight: 600;
+        }
+
+        a {
+            color: #A3C653;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #A3C653;
+            transition: width 0.3s ease;
+        }
+
+        a:hover {
+            color: #c8e87a;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #A3C653 0%, #8CB844 100%);
+            color: #1a1a2e;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(163, 198, 83, 0.3);
+        }
+
+        .back-link::before {
+            content: '←';
+            font-size: 1.2rem;
+        }
+
+        .back-link::after {
+            display: none;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(163, 198, 83, 0.4);
+            color: #1a1a2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 2rem 1rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+
+            .conteudo-privacidade {
+                padding: 1.5rem;
+                border-radius: 15px;
+            }
+
+            h2 {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Política de Privacidade - Simple PDF</h1>
+    </header>
+
+    <main>
+        <div class="conteudo-privacidade">
+            <p>A sua privacidade é importante para nós. Esta política de privacidade informa como suas informações são
+                tratadas ao utilizar o aplicativo Simple PDF.</p>
+
+            <h2>Coleta de Dados</h2>
+            <p>Informamos que o aplicativo <strong>Simple PDF não coleta nenhum tipo de dado pessoal do
+                    usuário</strong>. Não armazenamos informações como arquivos abertos, histórico de uso ou qualquer
+                outro dado identificável.</p>
+
+            <h2>Uso das Informações</h2>
+            <p>Como não coletamos dados pessoais, nenhuma informação é utilizada para fins de rastreamento, publicidade
+                direcionada ou qualquer outra finalidade que envolva o uso de dados do usuário.</p>
+
+            <h2>Segurança</h2>
+            <p>Embora não coletemos dados, nos comprometemos a manter o aplicativo seguro e livre de vulnerabilidades.
+            </p>
+
+            <h2>Alterações nesta Política</h2>
+            <p>Esta política de privacidade pode ser atualizada periodicamente. Quaisquer alterações serão comunicadas
+                nesta página.</p>
+
+            <a href="simplepdf.html" class="back-link">Voltar para a página do Simple PDF</a>
+        </div>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+
+</html>
